@@ -2,6 +2,8 @@ import medicalPlusLogo from "../assets/hero/Group 3.svg";
 import doctors from "../assets/hero/Object.png";
 import message from "../assets/hero/message-circle.svg";
 import clock from "../assets/hero/clock.svg";
+import Booking from "./utils/booking";
+import Boxes from "./utils/Boxes";
 
 export default function Home() {
   return (
@@ -23,25 +25,17 @@ export default function Home() {
             <li>Contact</li>
           </ul>
         </div>
-        <div className="flex py-4 px-7 items-start gap-2">
-          <button className="book flex gap-1 bg-blue-600 text-white rounded-full text-xl font-semibold w-24 h-6">
-            <img src={message} alt="message logo" className="w-6 h-6" />
-            Book Now
-          </button>
-        </div>
+        <Booking image={message} text="Book Now" />
       </section>
       <section className="hero flex items-center">
         <div className="information">
-          <h1>Dr. Matthew Anderson</h1>
+          <h1 className="text-title-500">Dr. Matthew Anderson</h1>
           <p>A dedicated doctor you can trust</p>
-          <p>
+          <p className="font-sora">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum
             eget vel, nunc nulla feugiat. Metus ut.
           </p>
-          <button className="book flex bg-blue-600 text-white rounded-full text-xl font-semibold">
-            <img src={message} alt="message logo" className="w-6 h-6" />
-            Book an appointment
-          </button>
+          <Booking image={message} text="Book an appointment" />.
         </div>
         <div>
           <div className="">
@@ -50,13 +44,11 @@ export default function Home() {
         </div>
       </section>
       <section className="boxes">
-        <div className="box1 flex bg-blue-600 w-64 h-20 rounded-xl py-2 px-5">
-          <img src={clock} alt="" className="w-9 h-9" />
-          <div className="content ">
-            <h3 className="w-36 h-7 font-semibold text-lg">Expertise in your field of medicine</h3>
-            <p className="text-lg font-normal">Lorem ipsum dolor sit amet, consectetur adipisicing el</p>
-          </div>
-        </div>
+        <Boxes
+          image={clock}
+          title="Expertise in your field of medicine"
+          paragraph="Lorem ipsum dolor sit amet, consectetur adipisicing el"
+        />
       </section>
     </div>
   );
