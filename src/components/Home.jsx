@@ -8,17 +8,19 @@ import Boxes from "./utils/Boxes";
 export default function Home() {
   return (
     <div>
-      <section className="nav flex w-full gap-52 justify-around items-center">
-        <div className="logo flex">
-          <h1 className="title text-blue-600 text-2xl font-bold">Doctor</h1>
-          <img
-            src={medicalPlusLogo}
-            alt="medical plus logo image"
-            className="w-6 h-6"
-          />
-        </div>
-        <div className="links">
-          <ul className="flex gap-6 items-center">
+      <section className="nav flex w-full gap-52 justify-around items-center my-8">
+        <div className="links flex items-center gap-44">
+          <div className="flex">
+            <h1 className="title text-blue-600 text-4xl font-sora font-bold">
+              Doctor
+            </h1>
+            <img
+              src={medicalPlusLogo}
+              alt="medical plus logo image"
+              className="w-6 h-6"
+            />
+          </div>
+          <ul className="flex gap-6 items-center font-sora text-lg font-normal">
             <li>Home</li>
             <li>About</li>
             <li>Service</li>
@@ -43,7 +45,17 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="boxes">
+      <section className="boxes flex justify-start gap-7">
+        <Boxes
+          image={clock}
+          title="Expertise in your field of medicine"
+          paragraph="Lorem ipsum dolor sit amet, consectetur adipisicing el"
+        />
+        <Boxes
+          image={clock}
+          title="Expertise in your field of medicine"
+          paragraph="Lorem ipsum dolor sit amet, consectetur adipisicing el"
+        />
         <Boxes
           image={clock}
           title="Expertise in your field of medicine"
