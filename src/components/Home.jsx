@@ -11,42 +11,52 @@ import Navbar from "./Navbar";
 export default function Home() {
   return (
     <div className="">
-      <div className="bg-background-lightBlue w-screen md:px-16 pb-36">
-        <section className="nav hidden lg:flex gap-40  lg:items-center lg:py-8">
-          <div className="links lg:flex items-center gap-36 px-10">
+      <div className="md:bg-background-lightBlue bg-[#FFF;] md:px-5 lg:px-16 md:pb-36 mb-10">
+        <section className="nav hidden md:flex md:40 lg:gap-40  md:items-center md:py-8">
+          <div className="links md:flex items-center md:gap-20 lg:gap-36 md:px-16">
             <div className="flex">
-              <h1 className="title text-blue-600 text-4xl font-sora font-bold">
+              <h1 className="title text-blue-600 md:text-2xl lg:text-4xl font-sora font-bold">
                 Doctor
               </h1>
               <img
                 src={medicalPlusLogo}
                 alt="medical plus logo image"
-                className="w-6 h-6"
+                className="lgw-6 h-6"
               />
             </div>
-            <ul className="lg:flex  lg:gap-6 lg:items-center font-sora text-base font-normal text-paragraphs-600">
+            <ul className="md:flex md:gap-3  lg:gap-6 md:items-center font-sora text-base font-normal text-paragraphs-600">
               <li className="text-blue-600">Home</li>
               <li>About</li>
               <li>Service</li>
               <li>Contact</li>
             </ul>
           </div>
-          <Booking image={message} text="Book Now"/>
+          <Booking
+            image={message}
+            text="Book Now"
+            color="bg-[linear-gradient(96deg,#3A8EF6_-10.84%,#6F3AFA_196.74%)]"
+          />
         </section>
-        <Navbar/>
-        <section className="hero md:flex md:flex-row flex flex-col-reverse md:items-center gap-6 mt-8 z-0">
+        <Navbar />
+        <section className="hero md:flex md:flex-row flex flex-col-reverse items-center justify-center md:items-center gap-6 mt-8 z-0">
           <div className="information flex flex-col px-10  md:py-4 md:px-7 md:items-start gap-6 md:w-[660px] md:justify-center">
-            <h1 className="text-title-500 text-xl font-poppin font-medium space-x-4 md:w-72">
+            <h1 className="text-title-500 text-xl font-poppin font-medium space-x-4 flex justify-center md:justify-start md:w-72">
               Dr. Matthew Anderson
             </h1>
-            <p className="font-poppin text-5xl font-bold text-subtitles-950">
+            <p className="flex text-center font-poppin md:text-5x text-3xl font-bold text-subtitles-950">
               A dedicated doctor you can trust
             </p>
-            <p className="font-sora text-base font-normal text-paragraphs-600">
+            <p className="flex md:justify-center justify-end md:text-start text-center font-sora text-base font-normal text-paragraphs-600">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum
               eget vel, nunc nulla feugiat. Metus ut.
             </p>
-            <Booking image={message} text="Book an appointment" />
+            <div className="flex justify-center ">
+              <Booking
+                image={message}
+                text="Book an appointment"
+                color="bg-[linear-gradient(96deg,#3A8EF6_-10.84%,#6F3AFA_196.74%)]"
+              />
+            </div>
           </div>
           <div>
             <div className="flex items-center">
@@ -55,7 +65,7 @@ export default function Home() {
           </div>
         </section>
       </div>
-      <section className="boxes flex flex-col md:flex md:justify-center my-16 gap-7 px-10  md:px-36 md:absolute md:top-[610px] md:w-full">
+      <section className="boxes flex flex-col md:flex-row md:flex md:justify-center md:my-8 gap-7 px-10  md:px-36 md:absolute md:top-[530px] lg:top-[610px] md:w-full mb-10">
         <Boxes
           image={clock}
           title="24 hour service"
