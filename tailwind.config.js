@@ -30,7 +30,7 @@ export default {
           900: "#0c554e",
           950: "#003432",
         },
-        "ship-cove": {
+        paragraphs: {
           50: "#f4f8fa",
           100: "#e6edf3",
           200: "#d4dfe9",
@@ -43,6 +43,22 @@ export default {
           900: "#414f67",
           950: "#2b3240",
         },
+        subtitles: {
+          50: "#ebf8ff",
+          100: "#d1efff",
+          200: "#aee4ff",
+          300: "#76d5ff",
+          400: "#35bcff",
+          500: "#0797ff",
+          600: "#0070ff",
+          700: "#0057ff",
+          800: "#0047d7",
+          900: "#0042a8",
+          950: "#031432",
+        },
+        background:{
+          lightBlue: "#F2F7FF"
+        }
       },
       fontFamily: {
         sora: ["sora", "sans-serif"],

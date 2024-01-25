@@ -3,13 +3,15 @@ import doctors from "../assets/hero/Object.png";
 import message from "../assets/hero/message-circle.svg";
 import clock from "../assets/hero/clock.svg";
 import Booking from "./utils/booking";
+import check from "../assets/hero/check-circle.svg";
+import plus from "../assets/hero/med.svg";
 import Boxes from "./utils/Boxes";
 
 export default function Home() {
   return (
-    <div>
-      <section className="nav flex w-full gap-52 justify-around items-center my-8">
-        <div className="links flex items-center gap-44">
+    <div className="bg-background-lightBlue px-20">
+      <section className="nav flex gap-36  items-center py-8">
+        <div className="links flex items-center gap-32 px-10">
           <div className="flex">
             <h1 className="title text-blue-600 text-4xl font-sora font-bold">
               Doctor
@@ -20,7 +22,7 @@ export default function Home() {
               className="w-6 h-6"
             />
           </div>
-          <ul className="flex gap-6 items-center font-sora text-lg font-normal">
+          <ul className="flex gap-6 items-center font-sora text-base font-normal text-paragraphs-600">
             <li>Home</li>
             <li>About</li>
             <li>Service</li>
@@ -29,36 +31,41 @@ export default function Home() {
         </div>
         <Booking image={message} text="Book Now" />
       </section>
-      <section className="hero flex items-center">
-        <div className="information">
-          <h1 className="text-title-500">Dr. Matthew Anderson</h1>
-          <p>A dedicated doctor you can trust</p>
-          <p className="font-sora">
+      <section className="hero flex  items-center gap-6 mt-8">
+        <div className="information flex flex-col  py-4 px-7 items-start gap-6 w-[660px] justify-center">
+          <h1 className="text-title-500 text-xl font-poppin font-medium space-x-4 w-72">
+            Dr. Matthew Anderson
+          </h1>
+          <p className="font-poppin text-5xl font-bold text-subtitles-950">
+            A dedicated doctor you can trust
+          </p>
+          <p className="font-sora text-base font-normal text-paragraphs-600">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum
             eget vel, nunc nulla feugiat. Metus ut.
           </p>
-          <Booking image={message} text="Book an appointment" />.
+          <Booking image={message} text="Book an appointment" />
         </div>
+
         <div>
-          <div className="">
+          <div className="flex items-center">
             <img src={doctors} alt="" className="" />
           </div>
         </div>
       </section>
-      <section className="boxes flex justify-start gap-7">
+      <section className="boxes flex justify-start my-16 gap-7 px-36">
         <Boxes
           image={clock}
-          title="Expertise in your field of medicine"
+          title="24 hour service"
           paragraph="Lorem ipsum dolor sit amet, consectetur adipisicing el"
         />
         <Boxes
-          image={clock}
-          title="Expertise in your field of medicine"
+          image={check}
+          title="8 years of experience"
           paragraph="Lorem ipsum dolor sit amet, consectetur adipisicing el"
         />
         <Boxes
-          image={clock}
-          title="Expertise in your field of medicine"
+          image={plus}
+          title="High quality care"
           paragraph="Lorem ipsum dolor sit amet, consectetur adipisicing el"
         />
       </section>
