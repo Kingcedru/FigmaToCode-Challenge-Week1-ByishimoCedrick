@@ -2,7 +2,7 @@ import medicalPlusLogo from "../assets/hero/Group 3.svg";
 import doctors from "../assets/hero/Object.png";
 import message from "../assets/hero/message-circle.svg";
 import clock from "../assets/hero/clock.svg";
-import Booking from "./utils/booking";
+import Booking from "./utils/Booking";
 import check from "../assets/hero/check-circle.svg";
 import plus from "../assets/hero/med.svg";
 import Boxes from "./utils/Boxes";
