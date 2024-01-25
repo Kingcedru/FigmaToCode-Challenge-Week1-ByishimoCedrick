@@ -34,7 +34,7 @@ export default function Home() {
           <Booking
             image={message}
             text="Book Now"
-            color="bg-[linear-gradient(96deg,#3A8EF6_-10.84%,#6F3AFA_196.74%)]"
+            color="bg-[linear-gradient(96deg,#3A8EF6_-10.84%,#6F3AFA_196.74%)] text-white"
           />
         </section>
         <Navbar />
@@ -54,7 +54,7 @@ export default function Home() {
               <Booking
                 image={message}
                 text="Book an appointment"
-                color="bg-[linear-gradient(96deg,#3A8EF6_-10.84%,#6F3AFA_196.74%)]"
+                color="bg-[linear-gradient(96deg,#3A8EF6_-10.84%,#6F3AFA_196.74%)] text-white"
               />
             </div>
           </div>
