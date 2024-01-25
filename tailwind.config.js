@@ -57,7 +57,7 @@ export default {
           950: "#031432",
         },
         background:{
-          lightBlue: "#F2F7FF"
+          lightBlue: "#F2F7FF",
         }
       },
       fontFamily: {
