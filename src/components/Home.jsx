@@ -6,12 +6,16 @@ import Booking from "./utils/booking";
 import check from "../assets/hero/check-circle.svg";
 import plus from "../assets/hero/med.svg";
 import Boxes from "./utils/Boxes";
+import { useState } from "react";
+import Navbar from "./Navbar";
 
 export default function Home() {
+const {isMobile, setMobile} = useState(true)
+
   return (
     <div className="">
-      <div className="bg-background-lightBlue w-screen px-16 pb-36">
-        <section className="nav flex gap-40  items-center py-8">
+      <div className="bg-background-lightBlue w-screen md:px-16 pb-36">
+        <section className="nav hidden lg:flex gap-40  items-center py-8">
           <div className="links flex items-center gap-36 px-10">
             <div className="flex">
               <h1 className="title text-blue-600 text-4xl font-sora font-bold">
@@ -23,18 +27,19 @@ export default function Home() {
                 className="w-6 h-6"
               />
             </div>
-            <ul className="flex gap-6 items-center font-sora text-base font-normal text-paragraphs-600">
+            <ul className="lg:flex  lg:gap-6 lg:items-center font-sora text-base font-normal text-paragraphs-600">
               <li className="text-blue-600">Home</li>
               <li>About</li>
               <li>Service</li>
               <li>Contact</li>
             </ul>
           </div>
-          <Booking image={message} text="Book Now" />
+          <Booking image={message} text="Book Now"/>
         </section>
-        <section className="hero flex  items-center gap-6 mt-8">
-          <div className="information flex flex-col  py-4 px-7 items-start gap-6 w-[660px] justify-center">
-            <h1 className="text-title-500 text-xl font-poppin font-medium space-x-4 w-72">
+        <Navbar/>
+        <section className="hero md:flex flex flex-col-reverse md:items-center gap-6 mt-8 z-0">
+          <div className="information flex flex-col px-10  md:py-4 md:px-7 items-start gap-6 md:w-[660px] md:justify-center">
+            <h1 className="text-title-500 text-xl font-poppin font-medium space-x-4 md:w-72">
               Dr. Matthew Anderson
             </h1>
             <p className="font-poppin text-5xl font-bold text-subtitles-950">
@@ -53,7 +58,7 @@ export default function Home() {
           </div>
         </section>
       </div>
-      <section className="boxes flex justify-center my-16 gap-7 px-36 absolute top-[610px] w-full">
+      <section className="boxes flex flex-col md:flex md:justify-center my-16 gap-7 px-10  md:px-36 md:absolute md:top-[610px] md:w-full">
         <Boxes
           image={clock}
           title="24 hour service"

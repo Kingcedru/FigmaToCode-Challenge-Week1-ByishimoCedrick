@@ -2,7 +2,7 @@ import Home from "./components/Home";
 
 export default function App() {
   return (
-    <div className="">
+    <div className="w-full">
       <Home />
     </div>
   );
