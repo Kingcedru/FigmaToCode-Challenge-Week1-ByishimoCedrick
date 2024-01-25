@@ -6,17 +6,14 @@ import Booking from "./utils/booking";
 import check from "../assets/hero/check-circle.svg";
 import plus from "../assets/hero/med.svg";
 import Boxes from "./utils/Boxes";
-import { useState } from "react";
 import Navbar from "./Navbar";
 
 export default function Home() {
-const {isMobile, setMobile} = useState(true)
-
   return (
     <div className="">
       <div className="bg-background-lightBlue w-screen md:px-16 pb-36">
-        <section className="nav hidden lg:flex gap-40  items-center py-8">
-          <div className="links flex items-center gap-36 px-10">
+        <section className="nav hidden lg:flex gap-40  lg:items-center lg:py-8">
+          <div className="links lg:flex items-center gap-36 px-10">
             <div className="flex">
               <h1 className="title text-blue-600 text-4xl font-sora font-bold">
                 Doctor
@@ -37,8 +34,8 @@ const {isMobile, setMobile} = useState(true)
           <Booking image={message} text="Book Now"/>
         </section>
         <Navbar/>
-        <section className="hero md:flex flex flex-col-reverse md:items-center gap-6 mt-8 z-0">
-          <div className="information flex flex-col px-10  md:py-4 md:px-7 items-start gap-6 md:w-[660px] md:justify-center">
+        <section className="hero md:flex md:flex-row flex flex-col-reverse md:items-center gap-6 mt-8 z-0">
+          <div className="information flex flex-col px-10  md:py-4 md:px-7 md:items-start gap-6 md:w-[660px] md:justify-center">
             <h1 className="text-title-500 text-xl font-poppin font-medium space-x-4 md:w-72">
               Dr. Matthew Anderson
             </h1>
