@@ -11,7 +11,7 @@ import Navbar from "./Navbar";
 export default function Home() {
   return (
     <div className="">
-      <div className="md:bg-background-lightBlue bg-[#FFF;] md:px-5 lg:px-16 md:pb-36 mb-10">
+      <div className="md:bg-background-lightBlue bg-[#FFF;] md:pb-36 mb-10">
         <section className="nav hidden md:flex md:40 lg:gap-40  md:items-center md:py-8">
           <div className="links md:flex items-center md:gap-20 lg:gap-36 md:px-16">
             <div className="flex">
