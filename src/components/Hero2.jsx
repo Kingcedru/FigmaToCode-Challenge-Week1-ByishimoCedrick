@@ -3,7 +3,7 @@ import Booking from "./utils/Booking";
 import whatsapp from "../assets/page2/whatsapp.png";
 export default function Hero2() {
   return (
-    <section className="">
+    <section className="md:py-4 mt-10">
       <div>
         <img src={doctor} alt="docter image" />
       </div>
