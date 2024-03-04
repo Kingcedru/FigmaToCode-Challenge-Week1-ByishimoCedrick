@@ -7,7 +7,7 @@ import Booking from "./utils/Booking";
 
 export default function Hero3() {
   return (
-    <div className="bg-background-lightBlue flex flex-col gap-10 px-2 mt-20">
+    <div className="bg-background-lightBlue flex flex-col gap-10 px-2 py-10 my-10">
       <section className="md:py-4 py-10 px-8 md:px-7  flex flex-col gap-10">
         <div>
           <div>
