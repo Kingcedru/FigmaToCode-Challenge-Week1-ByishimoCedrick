@@ -5,10 +5,10 @@ import whatsapp from "../assets/page7/whatsapp.svg";
 
 export default function Hero7() {
   return (
-    <div className="bg-[linear-gradient(145deg,#1678F2_3.73%,#65A8FB_132.69%)] px-10 md:px-7 py-6">
+    <div className="grid gap-5 text-white bg-[linear-gradient(145deg,#1678F2_3.73%,#65A8FB_132.69%)] px-10 md:px-7 py-6">
       <div className="grid gap-2">
         <img src={doctor} alt="" />
-        <p className="text-white font-sora font-extralight">
+        <p className="font-sora font-extralight">
           8 W. South St.Buford, GA 30518 5Briarwood LaneVienna, VA 22180 RER
         </p>
         <div className="flex gap-5">
@@ -17,21 +17,21 @@ export default function Hero7() {
           <img src={whatsapp} alt="" />
         </div>
       </div>
-      <div>
-        <h1>Book Now</h1>
-        <span>Appointment</span>
+      <div className="grid gap-3">
+        <h1 className="font-sora text-2xl font-semibold">Book Now</h1>
+        <span className="font-sora font-extralight">Appointment</span>
       </div>
-      <div>
-        <h1>Contact</h1>
-        <span>+1 123456789</span>
-        <span>remmcal@gmail.com</span>
-        <span>Phone: +1 12345678</span>
+      <div className="grid gap-1">
+        <h1 className="font-sora text-2xl font-semibold mb-4">Contact</h1>
+        <p className="font-sora font-extralight">+1 123456789</p>
+        <p className="font-sora font-extralight">remmcal@gmail.com</p>
+        <p className="font-sora font-extralight">Phone: +1 12345678</p>
       </div>
-      <div>
-        <h1>Company info</h1>
-        <span>About</span>
-        <span>Services</span>
-        <span>Blog</span>
+      <div className="grid gap-1">
+        <h1 className="font-sora text-2xl font-semibold mb-4">Company Info</h1>
+        <p className="font-sora font-extralight">About</p>
+        <p className="font-sora font-extralight">Services</p>
+        <p className="font-sora font-extralight">Blog</p>
       </div>
     </div>
   );
