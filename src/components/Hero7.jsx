@@ -33,6 +33,8 @@ export default function Hero7() {
         <p className="font-sora font-extralight">Services</p>
         <p className="font-sora font-extralight">Blog</p>
       </div>
+      <div className="bg-white py-[1px] my-5"></div>
+      <div className="text-center">© Doctor all rights 2024 - Designed by Cedrick Byishimo</div>
     </div>
   );
 }
