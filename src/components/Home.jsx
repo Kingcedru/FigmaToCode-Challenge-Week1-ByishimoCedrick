@@ -12,8 +12,8 @@ export default function Home() {
   return (
     <div className="">
       <div className="md:bg-background-lightBlue bg-[#FFF;] md:pb-36 mb-10">
-        <section className="nav hidden md:flex md:40 lg:gap-40  md:items-center md:py-8">
-          <div className="links md:flex items-center md:gap-20 lg:gap-36 md:px-16">
+        <section className="nav hidden md:block md:py-8 px-20 ">
+          <div className="flex justify-between">
             <div className="flex">
               <h1 className="title text-blue-600 md:text-2xl lg:text-4xl font-sora font-bold">
                 Doctor
@@ -24,22 +24,23 @@ export default function Home() {
                 className="lgw-6 h-6"
               />
             </div>
-            <ul className="md:flex md:gap-3  lg:gap-6 md:items-center font-sora text-base font-normal text-paragraphs-600">
+            <ul className="md:flex md:gap-3  lg:gap-12 md:items-center font-sora text-base font-normal text-paragraphs-600">
               <li className="text-blue-600">Home</li>
               <li>About</li>
               <li>Service</li>
               <li>Contact</li>
             </ul>
+
+            <Booking
+              image={message}
+              text="Book Now"
+              color="bg-[linear-gradient(96deg,#3A8EF6_-10.84%,#6F3AFA_196.74%)] text-white"
+            />
           </div>
-          <Booking
-            image={message}
-            text="Book Now"
-            color="bg-[linear-gradient(96deg,#3A8EF6_-10.84%,#6F3AFA_196.74%)] text-white"
-          />
         </section>
         <Navbar />
-        <section className="hero md:flex md:flex-row flex flex-col-reverse items-center justify-center md:items-center gap-6 mt-8 z-0">
-          <div className="information flex flex-col px-10  md:py-4 md:px-7 md:items-start gap-6 md:w-[660px] md:justify-center">
+        <section className="hero md:flex md:flex-row flex flex-col-reverse items-center justify-center md:items-center gap-6 mt-8 z-0 md:p-16">
+          <div className="information flex flex-col gap-6 ">
             <h1 className="text-title-500 text-xl font-poppin font-medium space-x-4 flex justify-center md:justify-start md:w-72">
               Dr. Matthew Anderson
             </h1>
